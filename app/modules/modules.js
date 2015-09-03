@@ -1,0 +1,1 @@
+angular.module('exam.modules', ['modules.main', 'modules.users', 'modules.post']);

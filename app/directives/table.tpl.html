@@ -1,0 +1,25 @@
+<span>Ilość na stronie: </span>
+<select ng-model="onsite">
+    <option  value="2">2</option>
+    <option  value="5">5</option>
+    <option  value="10">10</option>
+</select>  
+<table ng-model="tab" class="datatable">
+    <tbody>
+        <tr ng-repeat="t in tab[currentPage]">
+            <td>{{t.name}}</td> 
+            <td>{{t.email}}</td> 
+        </tr>
+    </tbody>
+</table>
+<ul class="pagination" ng-model="tab">
+    <span>Ilość stron: </span>
+    <li ng-repeat="n in range(tab.length)" ng-click="setPage(n)">
+        <a href="#" ng-bind="n + 1">1</a>
+    </li>
+
+</ul>
+
+
+
+

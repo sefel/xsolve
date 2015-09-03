@@ -1,0 +1,21 @@
+body{
+    width: 1000px;
+    margin: 0 auto;
+    background: #EEE;
+}
+
+h1 {
+   text-align: center; 
+}
+.main-nav ul li{
+    list-style:  none;
+    
+}
+.datatable tr:nth-child(even) {
+    background:#CCC
+}
+
+.pagination  li{
+    list-style:  none;
+    display: inline;
+}
